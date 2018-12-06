@@ -39,12 +39,12 @@ let points = lines.map(line => {
 );
 for(let i = 0; i < points.length; i++) {
     const closestPoint = findClosestPoint(points[i], points)
-    console.log(`closest point to ${points[i].id} is ${closestPoint}`);
+    points[i].closest = closestPoint
+    // console.log(`closest point to ${points[i].id} is ${closestPoint}`);
 }
 
 
-
-// console.log(lines);
+console.log(points);
 // console.log(manhattanDistance(points[1], points[2]))
 
 
